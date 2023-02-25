@@ -6,13 +6,13 @@ class TV:
         self._precio=500
         self._estado=estado
         self._volumen=1
-        self._control
+        self._control=None
         TV._numTV+=1
     
     def turnOn(self):
-        self.estado=True
+        self._estado=True
     def turnOff(self):
-        self.estado=False
+        self._estado=False
     def canalUp(self):
         if self._estado==True and self._canal<120:
             self._canal+=1
